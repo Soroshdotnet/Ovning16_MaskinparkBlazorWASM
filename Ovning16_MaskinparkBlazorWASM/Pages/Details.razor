@@ -1,0 +1,20 @@
+﻿@page "/details/{id:int}"
+@using Ovning16_MaskinparkBlazorWASM.MyModels;
+@using maskiner.shared.Domain;
+
+<h3>Details</h3>
+<h4>@Id</h4>
+<h4>@machine.Name</h4>
+<h4>@machine.Status</h4>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private Machine machine = new Machine();
+
+    protected override void OnInitialized()
+    {
+        machine = MockDataService.Machine.FirstOrDefault(m => m.Id == Id)!;
+    }
+}

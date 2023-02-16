@@ -1,9 +1,46 @@
-﻿@using maskiner.shared.Domain;
+﻿@using Ovning16_MaskinparkBlazorWASM.MyModels;
+@using maskiner.shared.Domain;
 
 @page "/Machines"
 
-<h3>Machines</h3>
+<h3>Machines overview</h3>
+
+<table class="table table-light">
+    <thead class="table-primary">
+        <tr>
+            @*<th></th>*@
+            <th>Machine Id</th>            
+            <th>Name</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var machine in Machines)
+        {
+                <tr>
+                    <td>@machine.Id</td>
+                    <td>@machine.Name</td>
+                    <td>@machine.Description</td>
+                    <td>@machine.Status</td>
+                    <td> <NavLink class="nav-link"   href="@($"details/{machine.Id}")">
+                         Details
+                    </NavLink></td>
+                </tr>
+        }
+    </tbody>
+
+</table>
+
+
 
 @code {
     public List<Machine> Machines { get; set; } = default!;
+
+    protected override void OnInitialized()
+    {
+        Machines = MockDataService.Machine;
+    }
 }

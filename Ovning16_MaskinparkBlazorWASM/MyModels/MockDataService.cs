@@ -1,6 +1,6 @@
 ﻿using maskiner.shared.Domain;
 
-namespace BethanysPieShopHRM.App.Models
+namespace Ovning16_MaskinparkBlazorWASM.MyModels
 {
     public class MockDataService
     {
@@ -17,6 +17,8 @@ namespace BethanysPieShopHRM.App.Models
             }
         }
 
+       
+
         private static List<Machine> InitializeMockMachine()
         {
             var e1 = new Machine
@@ -25,12 +27,12 @@ namespace BethanysPieShopHRM.App.Models
                 Name = "Machine1",
                 Description = "Some info",
                 Status = true
-                
+
             };
 
             var e2 = new Machine
             {
-                Id = 1,
+                Id = 2,
                 Name = "Machine 2",
                 Description = "Some info",
                 Status = false
