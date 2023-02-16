@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ovning16_MaskinparkBlazorWASM", "Ovning16_MaskinparkBlazorWASM\Ovning16_MaskinparkBlazorWASM.csproj", "{134113E9-44BF-4F47-858E-EF48E2F97FD9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "maskiner.shared", "maskiner.shared\maskiner.shared.csproj", "{C9877A96-B04A-4869-A26C-A77E6EC403F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{134113E9-44BF-4F47-858E-EF48E2F97FD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{134113E9-44BF-4F47-858E-EF48E2F97FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{134113E9-44BF-4F47-858E-EF48E2F97FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{134113E9-44BF-4F47-858E-EF48E2F97FD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9877A96-B04A-4869-A26C-A77E6EC403F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9877A96-B04A-4869-A26C-A77E6EC403F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9877A96-B04A-4869-A26C-A77E6EC403F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9877A96-B04A-4869-A26C-A77E6EC403F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E77DCDF6-B2AA-4FFF-B64A-94003A2DD439}
+	EndGlobalSection
+EndGlobal
