@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ovning16_MaskinparkBlazorWASM", "Ovning16_MaskinparkBlazorWASM\Ovning16_MaskinparkBlazorWASM.csproj", "{134113E9-44BF-4F47-858E-EF48E2F97FD9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "maskiner.shared", "maskiner.shared\maskiner.shared.csproj", "{C9877A96-B04A-4869-A26C-A77E6EC403F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Machines.Shared", "maskiner.shared\Machines.Shared.csproj", "{C9877A96-B04A-4869-A26C-A77E6EC403F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

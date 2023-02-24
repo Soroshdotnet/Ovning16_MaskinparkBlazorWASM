@@ -7,12 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Pages\Counter.razor" />
+    <Content Remove="Pages\FetchData.razor" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.2" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.2" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\maskiner.shared\maskiner.shared.csproj" />
+    <ProjectReference Include="..\maskiner.shared\Machines.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Components\" />
   </ItemGroup>
 
 </Project>

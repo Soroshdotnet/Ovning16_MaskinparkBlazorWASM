@@ -1,5 +1,5 @@
 ﻿@using Ovning16_MaskinparkBlazorWASM.MyModels;
-@using maskiner.shared.Domain;
+@using Machines.Shared.Domain;
 
 @page "/Machines"
 
@@ -25,14 +25,27 @@
                     <td>@machine.Name</td>
                     <td>@machine.Description</td>
                     <td>@machine.Status</td>
-                    <td> <NavLink class="nav-link"   href="@($"details/{machine.Id}")">
+                    <td> 
+                    <NavLink class="nav-link" href="@($"details/{machine.Id}")">
                          Details
-                    </NavLink></td>
+                    </NavLink>
+                    </td>
                 </tr>
         }
     </tbody>
 
 </table>
+
+@*CARD VIEW*@
+<div class="row">
+    @foreach (var machine in Machines)
+    {
+        <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
+            <MachineCard Machine="machine"></MachineCard>
+        </div>
+
+    }
+</div>
 
 
 
