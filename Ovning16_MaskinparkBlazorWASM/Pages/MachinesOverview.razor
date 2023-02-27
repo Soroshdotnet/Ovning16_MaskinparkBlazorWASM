@@ -24,7 +24,18 @@
                     <td>@machine.Id</td>
                     <td>@machine.Name</td>
                     <td>@machine.Description</td>
-                    <td>@machine.Status</td>
+                    <td>
+                        
+                    @if (machine.Status == true)
+                    {
+                        <label>Online</label>
+                    }
+                    else
+                    {
+                        <label>Offline</label>
+                    }
+
+                    </td>
                     <td> 
                     <NavLink class="nav-link" href="@($"details/{machine.Id}")">
                          Details

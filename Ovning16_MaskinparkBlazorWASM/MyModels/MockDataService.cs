@@ -22,8 +22,8 @@ namespace Ovning16_MaskinparkBlazorWASM.MyModels
             var m1 = new Machine
             {
                 Id = 1,
-                Name = "Machine1",
-                Description = "Some info",
+                Name = "Transformer",
+                Description = "Very good at transforming",
                 Status = true
 
             };
@@ -31,12 +31,20 @@ namespace Ovning16_MaskinparkBlazorWASM.MyModels
             var m2 = new Machine
             {
                 Id = 2,
-                Name = "Machine 2",
-                Description = "Some info",
+                Name = "Droid",
+                Description = "Cousin Android",
                 Status = false
             };
 
-            return new List<Machine>() { m1, m2 };
+            var m3 = new Machine
+            {
+                Id = 3,
+                Name = "Weatherman",
+                Description = "Talks about weather",
+                Status = false
+            };
+
+            return new List<Machine>() { m1, m2, m3 };
         }
     }
 }
