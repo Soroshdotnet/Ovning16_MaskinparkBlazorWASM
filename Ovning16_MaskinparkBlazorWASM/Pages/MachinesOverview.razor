@@ -36,12 +36,15 @@
 
 </table>
 
-@*CARD VIEW*@
+<!-- CARD VIEW WITH Popup -->
+
+<QuickViewPopup Machine="_selectedMachine"></QuickViewPopup>
+
 <div class="row">
     @foreach (var machine in Machines)
     {
         <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-            <MachineCard Machine="machine"></MachineCard>
+            <MachineCard Machine="machine" MachineQuickViewClicked="ShowQuickViewPopup"></MachineCard>
         </div>
 
     }
@@ -52,8 +55,20 @@
 @code {
     public List<Machine> Machines { get; set; } = default!;
 
+    private Machine? _selectedMachine; //popup
+
     protected override void OnInitialized()
     {
         Machines = MockDataService.Machine;
     }
+
+    public void ShowQuickViewPopup(Machine selectedMachine)
+    {
+        _selectedMachine = selectedMachine;
+    }
+
+
+    
+
+
 }

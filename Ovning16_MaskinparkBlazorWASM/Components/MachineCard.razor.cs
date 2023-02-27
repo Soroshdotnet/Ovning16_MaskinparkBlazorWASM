@@ -7,5 +7,8 @@ namespace Ovning16_MaskinparkBlazorWASM.Components
     {
         [Parameter]
         public Machine Machine { get; set; } = default!;
+
+        [Parameter]
+        public EventCallback<Machine> MachineQuickViewClicked { get; set; }
     }
 }

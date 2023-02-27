@@ -1,12 +1,16 @@
 ﻿<div class="col">
     <div class="card rounded-3 machine-card">
         <div class="card-header py-3">
-            <h4>@Machine.Name @Machine.Description</h4>
+            <label>@Machine.Name | @Machine.Description</label>
         </div>
         <div class="card-body machine-card text-center">
-            <div class="mb-3">
-                <img src="@($"https://wallup.net/wp-content/uploads/2017/11/23/530556-face-Tatiana_Shepeleva-robot-digital_art-500px-300x200.jpg{Machine.Id}.jpg")" class="machine-card" />
-            </div>
+@*            <div class="mb-3">
+                <img src="@($"/img/robot{Machine.Id}.jpg")" class="machine-card" /> 
+            </div>*@
+            <button class="btn btn-primary btn-sm mb-1"
+            @onclick="@(async() => await MachineQuickViewClicked.InvokeAsync(Machine))"
+            >Quick View</button>
         </div>
     </div>
 </div>
+
