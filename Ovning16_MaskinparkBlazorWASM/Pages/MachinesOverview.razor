@@ -1,18 +1,23 @@
 ﻿@using Ovning16_MaskinparkBlazorWASM.MyModels;
 @using Machines.Shared.Domain;
 
-@page "/Machines"
+@page "/"
+@page "/machines"
 
+<PageTitle>Machines</PageTitle>
 <h3>Machines overview</h3>
 
 <table class="table table-light">
     <thead class="table-primary">
         <tr>
             @*<th></th>*@
-            <th>Machine Id</th>            
+            <th>Id</th>            
             <th>Name</th>
             <th>Description</th>
             <th>Status</th>
+            <th></th>
+            <th></th>
+            <th></th>
             <th></th>
         </tr>
     </thead>
@@ -25,7 +30,6 @@
                     <td>@machine.Name</td>
                     <td>@machine.Description</td>
                     <td>
-                        
                     @if (machine.Status == true)
                     {
                         <label>Online</label>
@@ -34,11 +38,25 @@
                     {
                         <label>Offline</label>
                     }
-
                     </td>
                     <td> 
                     <NavLink class="nav-link" href="@($"details/{machine.Id}")">
                          Details
+                    </NavLink>
+                    </td>
+                    <td> 
+                    <NavLink class="nav-link" href="@($"edit/{machine.Id}")">
+                         Edit
+                    </NavLink>
+                    </td>
+                    <td> 
+                    <NavLink class="nav-link" href="@($"add/{machine.Id}")">
+                         Add
+                    </NavLink>
+                    </td>
+                    <td> 
+                    <NavLink class="nav-link" href="@($"delete/{machine.Id}")">
+                         X
                     </NavLink>
                     </td>
                 </tr>
@@ -49,7 +67,7 @@
 
 <!-- CARD VIEW WITH Popup -->
 
-<QuickViewPopup Machine="_selectedMachine"></QuickViewPopup>
+@*<QuickViewPopup Machine="_selectedMachine"></QuickViewPopup>
 
 <div class="row">
     @foreach (var machine in Machines)
@@ -59,7 +77,7 @@
         </div>
 
     }
-</div>
+</div>*@
 
 
 
@@ -67,6 +85,8 @@
     public List<Machine> Machines { get; set; } = default!;
 
     private Machine? _selectedMachine; //popup
+
+    private string Title = "MachinesOverview";
 
     protected override void OnInitialized()
     {
