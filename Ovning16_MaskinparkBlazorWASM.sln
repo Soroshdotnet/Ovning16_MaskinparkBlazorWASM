@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ovning16_MaskinparkBlazorWA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Machines.Shared", "maskiner.shared\Machines.Shared.csproj", "{C9877A96-B04A-4869-A26C-A77E6EC403F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maskinpark.API", "Maskinpark.API\Maskinpark.API.csproj", "{E393D034-112D-4BD1-AD4E-D6D1F765B4FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maskinpark.API", "Maskinpark.API\Maskinpark.API.csproj", "{8B34D425-7A36-4E2B-A98E-45EA88CB3C28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{C9877A96-B04A-4869-A26C-A77E6EC403F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9877A96-B04A-4869-A26C-A77E6EC403F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9877A96-B04A-4869-A26C-A77E6EC403F6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E393D034-112D-4BD1-AD4E-D6D1F765B4FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E393D034-112D-4BD1-AD4E-D6D1F765B4FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E393D034-112D-4BD1-AD4E-D6D1F765B4FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E393D034-112D-4BD1-AD4E-D6D1F765B4FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B34D425-7A36-4E2B-A98E-45EA88CB3C28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B34D425-7A36-4E2B-A98E-45EA88CB3C28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B34D425-7A36-4E2B-A98E-45EA88CB3C28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B34D425-7A36-4E2B-A98E-45EA88CB3C28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
